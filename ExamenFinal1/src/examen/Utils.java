@@ -56,7 +56,7 @@ public class Utils {
 			FileOutputStream fileOutputStream = new FileOutputStream(file);
 			ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
 			for (Vehicle vehicle : listP) {
-				objectOutputStream.writeObject(fileOutputStream);
+				objectOutputStream.writeObject(vehicle);
 			}
 			objectOutputStream.flush();
 			objectOutputStream.close();
