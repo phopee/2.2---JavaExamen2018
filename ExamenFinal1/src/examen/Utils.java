@@ -75,7 +75,7 @@ public class Utils {
 			ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 			Car car = new Car();
 			while (fileInputStream.available() > 0) {
-				objectInputStream.readObject();
+				car=(Car)objectInputStream.readObject();
 				electricCar.add(car);
 			}
 			objectInputStream.close();
